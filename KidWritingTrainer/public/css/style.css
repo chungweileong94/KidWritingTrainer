@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgb(210, 210, 210);
+}
+
+#canvas-wrapper {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+    #canvas-wrapper canvas {
+        -moz-box-shadow: 0px 0px 20px #868686;
+        -webkit-box-shadow: 0px 0px 20px #868686;
+        box-shadow: 0px 0px 20px #868686;
+        background: white;
+        display: block;
+        margin: 12px auto;
+    }
+
+#done-button {
+    display: block;
+    position: absolute;
+    text-decoration: none;
+    background: rgb(51, 136, 230);
+    color: white;
+    width: 48px;
+    height: 48px;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    text-align: center;
+    line-height: 48px;
+    bottom: -24px;
+    left: 50%;
+    margin-left: -24px;
+    -moz-box-shadow: 0px 0px 20px #868686;
+    -webkit-box-shadow: 0px 0px 20px #868686;
+    box-shadow: 0px 0px 20px #868686;
+    transition: background .2s;
+}
+
+    #done-button:hover {
+        background: rgb(244, 90, 90);
+    }
+
+#toolbar {
+    -moz-box-shadow: 0px 0px 20px #868686;
+    -webkit-box-shadow: 0px 0px 20px #868686;
+    box-shadow: 0px 0px 20px #868686;
+    background: rgb(238, 238, 238);
+    width: 144px;
+    height: 48px;
+    margin: 40px auto;
+    display: block;
+}
+
+    #toolbar:after {
+        content: "";
+        clear: both;
+        display: block;
+    }
+
+.toolbar-item {
+    float: left;
+    position: relative;
+    width: 48px;
+    height: 100%;
+    text-align: center;
+    line-height: 48px;
+    cursor: pointer;
+    -moz-transition: background .2s;
+    -o-transition: background .2s;
+    -webkit-transition: background .2s;
+    transition: background .5s color .5s;
+}
+
+    .toolbar-item:hover {
+        background: rgb(51, 136, 230);
+        color: white;
+    }
+
+.color-dropdown {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    background: rgb(238, 238, 238);
+    color: black;
+    z-index: 1;
+    -moz-box-shadow: 0px 0px 20px #868686;
+    -webkit-box-shadow: 0px 0px 20px #868686;
+    box-shadow: 0px 0px 20px #868686;
+}
+
+    .color-dropdown a {
+        display: block;
+        padding: 12px;
+        text-decoration: none;
+        color: black;
+        float: left;
+        transition: background .5s;
+    }
+
+        .color-dropdown a:hover {
+            background: #868686;
+        }
+
+.dropdown:hover .color-dropdown {
+    display: block;
+}
+
+.dropdown:active .color-dropdown {
+    display: block;
+}
+
+[class^='mdl2-']::before, [class*='mdl2-']::before {
+    font-size: 18px !important;
+}
+
+.ellipse {
+    width: 30px;
+    height: 30px;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+}
