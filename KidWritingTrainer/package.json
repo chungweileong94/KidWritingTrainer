@@ -1,0 +1,14 @@
+{
+  "name": "kid-writing-trainer",
+  "version": "0.0.0",
+  "description": "KidWritingTrainer",
+  "scripts": {
+    "start": "node server"
+  },
+  "engines": {
+    "node": "~6.10.x"
+  },
+  "author": {
+    "name": "leong"
+  }
+}
