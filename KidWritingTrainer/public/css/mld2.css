@@ -13,6 +13,14 @@ GitHub: https://github.com/CKGrafico/Segoe-mdl2-assets-css
         font-size: 1.8pc;
     }
 
+.mdl2-color::before {
+    content: '\e790';
+}
+
+.mdl2-inking-tool::before {
+    content: '\e76D';
+}
+
 .mdl2-heart-legacy::before {
     content: '\e006';
 }

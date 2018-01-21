@@ -13,22 +13,36 @@
 
     <div id="toolbar">
         <div class="toolbar-item dropdown">
-            <span class="mdl2-highlight"></span>
-            <div class="color-dropdown">
-                <a id="black-selection" href="#"><div class="ellipse" style="background:black;"></div></a>
-                <a id="red-selection" href="#"><div class="ellipse" style="background:#ce4040;"></div></a>
-                <a id="green-selection" href="#"><div class="ellipse" style="background:#2d780b;"></div></a>
-                <a id="blue-selection" href="#"><div class="ellipse" style="background:#4763c0;"></div></a>
+            <span class="mdl2-color"></span>
+            <div class="dropdown-content">
+                <a class="color-selection" id="black" href="#"><div class="ellipse" style="background:black;"></div></a>
+                <a class="color-selection" id="red" href="#"><div class="ellipse" style="background:#ce4040;"></div></a>
+                <a class="color-selection" id="green" href="#"><div class="ellipse" style="background:#2d780b;"></div></a>
+                <a class="color-selection" id="blue" href="#"><div class="ellipse" style="background:#4763c0;"></div></a>
             </div>
         </div>
-        <div class="toolbar-item">
-            <span class="mdl2-edit" />
+        <div class="toolbar-item dropdown">
+            <span class="mdl2-inking-tool" />
+            <div class="dropdown-content">
+                <a class="stroke-selection" id="l" href="#"><div class="ellipse ellipse-l" style="background:black;"></div></a>
+                <a class="stroke-selection" id="m" href="#"><div class="ellipse ellipse-m" style="background:black;"></div></a>
+                <a class="stroke-selection" id="s" href="#"><div class="ellipse ellipse-s" style="background:black;"></div></a>
+                <a class="stroke-selection" id="xs" href="#"><div class="ellipse ellipse-xs" style="background:black;"></div></a>
+            </div>
         </div>
         <div id="clear-button" class="toolbar-item">
             <span class="mdl2-delete" />
         </div>
     </div>
 
+    <div id="loading-screen">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/addons/p5.dom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.16/addons/p5.sound.min.js"></script>
