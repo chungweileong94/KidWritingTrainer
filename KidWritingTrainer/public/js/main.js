@@ -38,7 +38,7 @@ function setup() {
             url: "https://southcentralus.api.cognitive.microsoft.com/vision/v1.0/recognizeText?handwriting=true",
             beforeSend: function (xhrObj) {
                 xhrObj.setRequestHeader("Content-Type", "application/octet-stream");
-                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", "54621321be954b69b563250c84908be8");
+                xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", "...sub key...");
             },
             type: "POST",
             data: blob,
@@ -52,7 +52,7 @@ function setup() {
                     url: operationLocation,
                     beforeSend: function (xhrObj) {
                         xhrObj.setRequestHeader("Content-Type", "application/json");
-                        xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", "54621321be954b69b563250c84908be8");
+                        xhrObj.setRequestHeader("Ocp-Apim-Subscription-Key", "...sub key...");
                     },
                     type: "GET",
                 }).done(function (data, textStatus, jqXHR) {
