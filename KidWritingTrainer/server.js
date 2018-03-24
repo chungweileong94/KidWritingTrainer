@@ -8,10 +8,6 @@ app.use(express.static("./public"));
 
 app.get("/", (req, res) => {
     res.sendFile(path.join(__dirname, "/public/home.html"));
-})
-
-app.get("/analyze", (req, res) => {
-    
 });
 
 app.listen(port, () => {
